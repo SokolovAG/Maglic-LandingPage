@@ -1,0 +1,23 @@
+{
+  "name": "Maglic",
+  "description": "Practice",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-less": "^3.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SokolovAG/Maglic-LandingPage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SokolovAG/Maglic-LandingPage/issues"
+  },
+  "homepage": "https://github.com/SokolovAG/Maglic-LandingPage#readme"
+}
