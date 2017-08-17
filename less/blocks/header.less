@@ -1,6 +1,78 @@
 .header-wrapper {
-    width: 95%;
-    min-width: 1024px;
-    max-width: 1500px;
+  width: 95%;
+  min-width: 1024px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #5c5b57;
+  background-image: url(../img/header_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100%;
+
+  &::after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+}
+
+.header__line {
+    padding: 35px 0;
+
+    &::after {
+        display: table;
+        clear: both;
+        content: '';
+    }
+}
+
+.header__logo {
+  float: left;
+  width: 30%;
+  text-align-last: auto;
+}
+
+.header__slogan {
+  font-weight: 900;
+  clear: both;
+  margin: 0 auto;
+  padding: 15% 0;
+  text-align: center;
+  color: @dirt-white;
+}
+
+.header__slogan-title {
+    font-size: 72px;
+    line-height: 80px;
+    padding: 0;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+  }
+
+.header__slogan-text {
+    font-size: 20px;
+    line-height: 25px;
+    padding: 0;
+    margin-bottom: 40px;
+    font-weight: 400;
+  }
+
+
+.header__slogan-sign {
+    display: block;
+    font-family: 'Montserrat', Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: @dirt-white;
+    padding: 15px 0;
     margin: 0 auto;
+    border: 1px solid #535356;
+    width: 215px;
 }
