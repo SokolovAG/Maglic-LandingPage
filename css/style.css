@@ -158,6 +158,7 @@ body {
   text-decoration: none;
   text-align: right;
   position: relative;
+  transition: color 0.3s;
 }
 .main-nav__link::after {
   position: absolute;
@@ -165,11 +166,15 @@ body {
   left: 0;
   width: 100%;
   height: 1px;
-  background: #fff;
+  background: #eeb013;
   content: '';
   opacity: 0;
   transition: height 0.3s, opacity 0.3s, transform 0.3s;
   transform: translateY(-10px);
+}
+.main-nav__link:hover,
+.main-nav__link:focus {
+  color: #eeb013;
 }
 .main-nav__link:hover::after,
 .main-nav__link:focus::after {

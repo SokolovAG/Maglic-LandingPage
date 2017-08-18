@@ -25,6 +25,7 @@
   text-decoration: none;
   text-align: right;
   position: relative;
+  transition: color 0.3s;
 
   &::after {
     position: absolute;
@@ -32,11 +33,16 @@
     left: 0;
     width: 100%;
     height: 1px;
-    background: #fff;
+    background: @golden;
     content: '';
     opacity: 0;
     transition: height 0.3s, opacity 0.3s, transform 0.3s;
     transform: translateY(-10px);
+  }
+
+  &:hover,
+  &:focus {
+    color: @golden;
   }
 
   &:hover::after,
