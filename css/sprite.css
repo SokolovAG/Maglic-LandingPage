@@ -1,0 +1,77 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-clients_line {
+    width: 305px;
+    height: 25px;
+    background-position: -60px -60px;
+}
+
+.sprite-concept {
+    width: 69px;
+    height: 69px;
+    background-position: -60px -205px;
+}
+
+.sprite-features_icon-1 {
+    width: 37px;
+    height: 37px;
+    background-position: -60px -394px;
+}
+
+.sprite-features_icon-2 {
+    width: 25px;
+    height: 37px;
+    background-position: -60px -551px;
+}
+
+.sprite-features_icon-3 {
+    width: 33px;
+    height: 30px;
+    background-position: -60px -708px;
+}
+
+.sprite-features_icon-4 {
+    width: 32px;
+    height: 32px;
+    background-position: -60px -858px;
+}
+
+.sprite-features_icon-5 {
+    width: 37px;
+    height: 32px;
+    background-position: -60px -1010px;
+}
+
+.sprite-features_icon-6 {
+    width: 33px;
+    height: 27px;
+    background-position: -60px -1162px;
+}
+
+.sprite-photography_icon {
+    width: 69px;
+    height: 69px;
+    background-position: -60px -1309px;
+}
+
+.sprite-unique_icon {
+    width: 69px;
+    height: 69px;
+    background-position: -60px -1498px;
+}
+
+.sprite-works_line {
+    width: 224px;
+    height: 21px;
+    background-position: -60px -1687px;
+}
+
+.sprite-works_line_gray {
+    width: 224px;
+    height: 21px;
+    background-position: -60px -1828px;
+}
