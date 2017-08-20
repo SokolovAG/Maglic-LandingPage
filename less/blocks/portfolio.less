@@ -1,0 +1,131 @@
+
+.portfolio__filter {
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    padding: 3% 0;
+}
+
+.portfolio__title {
+    font-family: 'Montseratt', Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: @white;
+
+    &--sideline::after {
+        content: '';
+        display: block;
+        width: 224px;
+        height: 21px;
+        background-image: url(../img/sprite_icons.png);
+        background-position: -60px -1687px;
+        margin: 30px auto;
+    }
+}
+
+.portfolio__subtitle {
+    font-family: 'Open Sans', Tahoma, sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+    color: @white;
+
+}
+
+.portfolio__filter-list {
+    text-align: center;
+    font-size: 0;
+    margin: 40px auto 10px;
+}
+
+.portfolio__filter-item {
+    display: inline-block;
+    text-align: center;
+    margin-right: 25px;
+}
+
+.portfolio__filter-link {
+        font-size: 18px;
+        line-height: 30px;
+        color: @white;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: block;
+        overflow: hidden;
+        position: relative;
+        transition: ease-out .3s .1s;
+        padding: 10px;
+        width: 200px;
+        border: 1px solid @white;
+
+        &--plus {
+            width: 40px;
+        }
+
+        & span::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    content: '';
+    transition: .1s;
+    transform: translateX(-100%);
+    background: @golden;
+
+  }
+
+  & span::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    content: '';
+    transition: .1s .2s;
+    transform: translateX(100%);
+    background: @golden;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    content: '';
+    transition: .1s .3s;
+    transform: translateY(100%);
+    background: @golden;
+  }
+
+  &::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    content: '';
+    transition: .1s .1s;
+    transform: translateY(-100%);
+    background: @golden;
+  }
+
+  &:hover {
+    border: 1px solid transparent;
+  }
+
+  &:hover::before,
+  &:hover::after {
+    transform: translateX(0);
+
+  }
+
+  &:hover span::after,
+  &:hover span::before {
+    transform: translateX(0);
+
+  }
+
+}
