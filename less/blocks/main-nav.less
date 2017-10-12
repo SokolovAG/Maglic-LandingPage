@@ -1,5 +1,5 @@
 .main-nav {
-  width: 65%;
+  width: 80%;
   float: right;
   text-align: right;
 }
@@ -7,13 +7,17 @@
 .main-nav__item {
   list-style: none;
   display: inline-block;
-  font-size: 0;
-  margin: 0 20px;
   vertical-align: top;
+  font-size: 0;
+  margin-right: 30px;
+  
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .main-nav__items {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .main-nav__link {
@@ -47,7 +51,7 @@
 
   &:hover::after,
   &:focus::after {
-    height: 5px;
+    height: 4px;
     opacity: 1;
     transform: translateY(10px);
   }
