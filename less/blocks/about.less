@@ -1,7 +1,7 @@
 .about-wrapper {
   width: 95%;
   min-width: 1024px;
-  max-width: 1500px;
+  max-width: 1162px;
   margin: 0 auto;
 }
 
@@ -9,7 +9,7 @@
   padding-top: 2%;
   background-image: url(../img/service.jpg);
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 0 0;
   background-size: 100%;
 
 }
@@ -20,11 +20,12 @@
   font-weight: 700;
   line-height: 60px;
   text-align: center;
+  letter-spacing: 4px;
 
 }
 
 .about__text {
-  width: 545px;
+  width: 657px;
   margin: 0 auto;
   text-align: left;
 
@@ -49,6 +50,7 @@
 
 .about__items {
   font-size: 0;
+  text-align: right;
 
 }
 
@@ -58,9 +60,13 @@
   font-weight: 700;
   line-height: 60px;
   display: inline-block;
-  width: 33%;
   vertical-align: top;
   text-transform: uppercase;
+  margin-right: 70px;
+  
+  &:last-child {
+    margin-right: 0;
+  }
 
 
   &::before {
