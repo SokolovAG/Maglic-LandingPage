@@ -474,13 +474,15 @@ img {
       flex-wrap: wrap;
 }
 .portfolio__item {
-  width: 24%;
+  width: 25%;
   -ms-flex-positive: 1;
       flex-grow: 1;
   position: relative;
   overflow: hidden;
 }
 .portfolio__item-caption {
+  display: none;
+  /* temporary styles */
   position: absolute;
   left: 0;
   top: 0;
