@@ -5,4 +5,163 @@
   margin: 0 auto;
 }
 
+.features {
+  padding: 50px 0;
+}
+
+.features__title {
+  font-family: 'Montserrat', Tahoma, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+  position: relative;
+  
+  &::after {
+    content: '';
+    display: block;
+    width: 224px;
+    height: 21px;
+    background-image: url(../img/sprite_icons.png);
+    background-position: -60px -1828px;
+    margin: 30px auto;
+  }
+}
+
+.features__subtitle {
+  font-family: 'Open Sans', Tahoma, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  color: #8c8c8c;
+}
+
+.features__intro {
+  background-image: url(../img/maglic_app.png);
+  background-repeat: no-repeat;
+  background-position: right 0 top 50%;
+  margin-bottom: 15px;
+}
+
+.features__descr {
+  padding-top: 140px;
+  width: 50%;
+  text-align: left;
+}
+
+.features__descr-title {
+  font-family: 'Montseratt', Tahoma, sans-serif;
+  font-size: 24px;
+  line-height: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.features__descr-text {
+  font-family: 'Montseratt', Tahoma, sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #8c8c8c;
+  margin-bottom: 30px;
+}
+
+.features__descr-author {
+  font-family: 'Open Sans', Tahoma, sans-serif;
+  font-size: 10px;
+  line-height: 60px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 70px;
+    height: 1px;
+    background: #000000;
+  }
+}
+
+.features__items {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.features__item {
+  width: 32%;
+  vertical-align: top;
+  margin-bottom: 10px;
+  padding: 30px 30px 30px 75px;
+  box-sizing: border-box;
+  position: relative;
+  
+  &:nth-child(-n+3) {
+    border-bottom: 1px solid #ededed;
+  }
+  
+  &::before {
+    display: block;
+    width: 37px;
+    height: 37px;
+    content: '';
+    vertical-align: top;
+    background-image: url(../img/sprite_icons.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 30px;
+  }
+  
+  &--trend::before {
+    background-position: -60px -394px;
+  }
+  
+  &--smart::before {
+    background-position: -60px -551px;
+  }
+  
+  &--admin::before {
+    background-position: -60px -708px;
+  }
+  
+  &--sleep::before {
+    background-position: -60px -858px;
+  }
+  
+  &--user::before {
+    background-position: -60px -1010px;
+  }
+  
+  &--backup::before {
+    background-position: -60px -1162px;
+  }
+}
+
+.features__item-title {
+  font-family: 'Montserrat', Tahoma, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.features__item-text {
+  font-family: 'Montserrat', Tahoma, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #8c8c8c;
+}
+
+
+
 
