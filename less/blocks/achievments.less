@@ -1,0 +1,53 @@
+.achievments-wrapper {
+  width: 95%;
+  min-width: 1024px;
+  max-width: 1162px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.achievments {
+  background-image: url(../img/advantages-parallax.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 80px 0;
+  color: #ffffff;
+}
+
+.achievments__item {
+  text-align: center;
+  position: relative;
+  padding-bottom: 40px;
+  
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background: #ffffff;
+  }
+}
+
+.achievments__stats {
+  font-family: 'Montserrat', Tahoma, sans-serif;
+  font-size: 48px;
+  line-height: 50px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.achievments__title {
+  font-family: 'Montserrat', Tahoma, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}
